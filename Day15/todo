@@ -1,0 +1,33 @@
+3 coffee Flavours 
+- Espresso
+    - 50ml water
+    - 18g Coffee
+    - $1.50
+
+- Latte
+    - 200ml Water
+    - 24g Coffee
+    - 150ml Milk
+
+- Cappuccino
+    - 250ml Water
+    - 24g Coffee
+    - 100ml Milk
+
+coffee Machine Resource
+300ml Water
+200ml Milk
+100g Coffee
+
+Coin Operated
+Penny - 1 cents $0.01
+Nicke - 5 cents $0.05
+Dime  - 10 cents $0.10
+Quarter - 25 cents $0.25
+
+Requirments
+- Print Report
+- Check Resource Sufficient
+- Process Coin
+- Check Transaction Successful ?
+- Make Coffee (deduct the resource)
