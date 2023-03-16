@@ -14,12 +14,24 @@ class Snake:
 
     def create_snake(self):
         for position in STARTING_POSITION:
-            snake = Turtle()
-            snake.shape("square")
-            snake.color("white")
-            snake.penup()
-            snake.goto(position)
-            self.snake_shape.append(snake)
+            self.add_snake(position)
+            # snake = Turtle()
+            # snake.shape("square")
+            # snake.color("white")
+            # snake.penup()
+            # snake.goto(position)
+            # self.snake_shape.append(snake)
+
+    def add_snake(self, position):
+        snake = Turtle()
+        snake.shape("square")
+        snake.color("white")
+        snake.penup()
+        snake.goto(position)
+        self.snake_shape.append(snake)
+
+    def extent(self):
+        self.add_snake(self.snake_shape[-1].position())
 
     def move(self):
         for number in range(len(self.snake_shape) - 1, 0, -1):
@@ -43,3 +55,10 @@ class Snake:
     def right(self):
         if self.snake_shape[0].heading() != LEFT:
             self.snake_shape[0].setheading(RIGHT)
+
+    # def add_square(self):
+    #     snake = Turtle()
+    #     snake.penup()
+    #     snake.shape("square")
+    #     snake.color("white")
+    #     self.snake_shape.append(snake)
